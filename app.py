@@ -8,7 +8,7 @@ import pandas as pd
 
 name = st.selectbox(
     'Who is this?',
-    ('Arnaud', 'Arnaud', 'Arnaud'))
+    ('TJ', 'TJ', 'TJ'))
 
 
 st.markdown(f"""# This is a {name}
