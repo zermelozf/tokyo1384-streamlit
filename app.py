@@ -35,3 +35,8 @@ h = df().head(line_count)
 h
 
 st.markdown(f"\nAPI_KEY={os.environ.get('API_KEY')}")
+
+spell = st.secrets['spell']
+key = st.secrets.some_magic_api.key
+
+st.markdown(key)
