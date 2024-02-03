@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 
 import numpy as np
 import pandas as pd
@@ -32,3 +33,5 @@ line_count = st.slider('Select a line count', 1, 10, 3)
 # and used to select the displayed lines
 h = df().head(line_count)
 h
+
+st.markdown(f"\nAPI_KEY={os.environ.get('API_KEY')}")
