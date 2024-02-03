@@ -1,5 +1,6 @@
 import streamlit as st
 import os
+import requests
 
 import numpy as np
 import pandas as pd
@@ -7,7 +8,7 @@ import pandas as pd
 
 name = st.selectbox(
     'Who is this?',
-    ('Christine', 'Ryan', 'JFK'))
+    ('Arnaud', 'Arnaud', 'Arnaud'))
 
 
 st.markdown(f"""# This is a {name}
@@ -40,3 +41,8 @@ spell = st.secrets['spell']
 key = st.secrets.some_magic_api.key
 
 st.markdown(key)
+
+
+api_url = 'mysupermodel.com/predict'
+res = requests.get(api_url)
+st.markdown(res.json())
